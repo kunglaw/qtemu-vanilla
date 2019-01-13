@@ -1,0 +1,31 @@
+#member {
+    padding: 10px 0;
+}
+
+#member .container {
+    width:95%;
+    padding:0 0px;
+
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#member .content{
+    background-color: cornflowerblue;
+    padding: 10px;
+}
+
+#member .member-img {
+    width: 80px;
+    height: 80px;
+    float: left;
+    background-color: darkcyan;
+    border-radius: 50%;
+    margin: 0 20px 0 0;
+}
+
+#member .description {
+    float: left;
+    margin: 0 20px;
+}
+

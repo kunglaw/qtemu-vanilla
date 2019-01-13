@@ -1,0 +1,11 @@
+.card {
+  
+    border: 1px solid gray;
+    border-radius:5%;
+    padding: 20px;
+    float: left;
+}
+
+.card .card-title {
+    border-bottom: 1px solid gray;
+}

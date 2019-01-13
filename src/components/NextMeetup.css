@@ -1,0 +1,22 @@
+#next-meetup {
+    padding: 10px 0;
+}
+
+#next-meetup .container {
+    width:95%;
+    padding:0 0px;
+
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#next-meetup .container h2 {
+ 
+}
+
+#next-meetup .content{
+    background-color: cornflowerblue;
+    padding: 10px;
+}
+
+

@@ -1,0 +1,40 @@
+#meetup-header {
+   background-color:gray ;
+   padding: 10px 0;
+}
+
+#meetup-header .container {
+    width:90%;
+    padding:2%;
+    background-color: orange;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#meetup-header .profile-pic {
+    float: left;
+}
+
+#meetup-header img {
+    width: 200px;
+    height: 200px;
+    background-color: yellow
+}
+
+#meetup-header .detail { 
+    float: left;
+    margin-left: 20px;
+}
+
+#meetup-header .detail h2 { 
+    float: left;
+    padding: 0px;
+}
+
+#meetup-header table {
+    width: 500px;
+}
+
+#meetup-header table tr td {
+
+}

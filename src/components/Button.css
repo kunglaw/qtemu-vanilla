@@ -1,0 +1,27 @@
+.btn {
+    padding: 10px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.btn-primary {
+    background-color: blue
+}
+
+.btn-lg {
+    font-size: 16px !important;
+}
+
+.btn-danger {
+    background-color: red
+}
+
+.btn-default {
+    background-color: gray
+}
+
+.btn-success {
+    background-color: green;
+}

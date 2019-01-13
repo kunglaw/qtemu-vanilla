@@ -1,0 +1,11 @@
+#past-meetup { 
+   padding: 10px 0; 
+}
+
+#past-meetup .container {
+    width:95%;
+    padding:0 0px;
+
+    margin-left:auto;
+    margin-right:auto;
+}
