@@ -8,6 +8,7 @@ import NextMeetup from "./components/NextMeetup"
 import AboutMeetup from './components/AboutMeetup';
 import Member from "./components/Member"
 import PastMeetup from "./components/PastMeetup"
+import Footer from "./components/Footer"
 
 class App extends Component {
   render() {
@@ -19,6 +20,7 @@ class App extends Component {
         <AboutMeetup></AboutMeetup>
         <Member></Member>
         <PastMeetup></PastMeetup>
+        <Footer></Footer>
       </div>
     );
   }

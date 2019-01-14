@@ -16,7 +16,7 @@ class MeetupHeader extends React.Component {
             <section id="meetup-header" >
                 <div className="container">
                     <div className="profile-pic">
-                        <img src="/assets/img/gintoki.png"></img>
+                        <img src="./assets/img/gintoki.png"></img>
                     </div>
                     <div className="detail">
                         <h2> Hacktiv8 Meetup </h2>
