@@ -3,21 +3,13 @@ import "./Member.css"
 
 class Member extends React.Component {
 
-    constructor(props) {
-        super(props)
-
-        this.state = {
-            members:props.members
-        }
-    }
-
     render() {
 
-        const { members } = this.state
+        const { members } = this.props
 
         const memberContents = members.map((content) => {
             return (
-                <div className="content">
+                <div key={ content.name } className="content">
                     <img className="member-img" src="{}" alt="avatar"></img>
                     <div className="description">
                         <h3>{ content.title }</h3>

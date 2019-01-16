@@ -12,7 +12,7 @@ class PastMeetup extends React.Component{
         
         const pastMeetupCards = pastMeetup.map(( content ) => {
             return(
-                <Card style={{ width:"25%", marginRight:"50px" }} title={ content.title }>
+                <Card key={ content.title } style={{ width:"25%", marginRight:"50px" }} title={ content.title }>
                     <p> { content.description } </p>  
                     <Button className="btn btn-lg btn-success" href={ content.redirect }> View </Button>
                 </Card>

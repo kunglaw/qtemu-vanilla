@@ -1,6 +1,8 @@
 import React from "react"
 import "./AboutMeetup.css"
 
+import Text from "./Text"
+
 class AboutMeetup extends React.Component {
     render() {
         return (
@@ -9,14 +11,14 @@ class AboutMeetup extends React.Component {
                     <h1>About Meetup</h1>
                     
 
-                    <p>
+                    <Text>
                         HACKTIV8 adalah pionir program pelatihan (coding bootcamp) 
                         intensif selama 12 minggu di Jakarta yang mengubah pemula 
                         menjadi seorang Full-Stack Developer andal.
-                    </p>
-                    <p>For more information, contact:</p>
+                    </Text>
+                    <Text>For more information, contact:</Text>
 
-                    <div>(+62) 819 0887 8010</div>
+                    <Text>(+62) 819 0887 8010</Text>
                     <a href="#">admissions@hacktiv8.com</a>
                 </div>
                 

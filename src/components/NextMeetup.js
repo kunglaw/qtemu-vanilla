@@ -1,6 +1,8 @@
 import React from "react"
 import "./NextMeetup.css"
 
+import Text from "./Text"
+
 class NextMeetup extends React.Component {
 
     render() {
@@ -11,12 +13,12 @@ class NextMeetup extends React.Component {
                     <div className="content">
                         <p><b>Description</b></p>
 
-                        <div>HACKTIV8 Open House merupakan sebuah acara yang memberikan 
+                        <Text>HACKTIV8 Open House merupakan sebuah acara yang memberikan 
                         kesempatan bagi siapa saja yang tertarik dengan program pelatihan 
                         di HACKTIV8 untuk melihat secara langsung Campus HACKTIV8 dan 
-                        mulai mengenal program-program yang ada disini.</div>
+                        mulai mengenal program-program yang ada disini.</Text>
 
-                        <p>Di acara ini, partisipan akan:</p>
+                        <Text>Di acara ini, partisipan akan:</Text>
                             <ul>
                                 <li>Diperkenalkan lebih detail mengenai program dan 
                                 kurikulum HACKTIV8.</li>
@@ -27,17 +29,17 @@ class NextMeetup extends React.Component {
                                     kegiatan para murid di HACKTIV8 </li>
                             </ul>
                         
-                            <div> Selain itu, instruktur kami juga akan membagikan 
+                            <Text> Selain itu, instruktur kami juga akan membagikan 
                             pengalaman dia dalam hal karir sebagai seorang 
                             developer, dengan harapan dapat menginspirasi kamu 
-                            semua yang memiliki ketertarikan dalam dunia teknologi. </div>
+                            semua yang memiliki ketertarikan dalam dunia teknologi. </Text>
 
-                            <p>Dapatkan KODE PROMO SPESIAL untuk program kami khusus bagi 
-                            kamu yang menghadiri acara ini.</p>
+                            <Text>Dapatkan KODE PROMO SPESIAL untuk program kami khusus bagi 
+                            kamu yang menghadiri acara ini.</Text>
 
-                            <p>Tunggu apa lagi? Daftarkan dirimu sekarang!</p>
+                            <Text>Tunggu apa lagi? Daftarkan dirimu sekarang!</Text>
 
-                            <p>For more information, contact:</p>
+                            <Text>For more information, contact:</Text>
 
                             <div>(+62) 819 0887 8010</div>
                             <a href="#">admissions@hacktiv8.com</a>
