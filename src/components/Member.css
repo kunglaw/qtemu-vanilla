@@ -1,5 +1,6 @@
 #member {
     padding: 10px 0;
+    
 }
 
 #member .container {
@@ -13,6 +14,7 @@
 #member .content{
     background-color: cornflowerblue;
     padding: 10px;
+    margin-bottom: 10px;
 }
 
 #member .member-img {
@@ -29,3 +31,17 @@
     margin: 0 20px;
 }
 
+#member h1 {
+    float: left;
+   
+
+}
+
+#member .see-all{
+    float: right;
+   
+}
+
+#member .clearfix {
+    clear:both;
+}

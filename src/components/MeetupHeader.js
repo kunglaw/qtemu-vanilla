@@ -4,19 +4,20 @@ import "./MeetupHeader.css"
 import Button from "./Button"
 
 class MeetupHeader extends React.Component {
-    constructor () {
-        super()
+    constructor (props) {
+        super(props)
         this.state = {
-            name:'test'
+            meetupHeader:props.meetupHeader    
         }
     }
 
     render() {
+        const { meetupHeader } = this.state
         return (
             <section id="meetup-header" >
                 <div className="container">
                     <div className="profile-pic">
-                        <img src="./assets/img/gintoki.png"></img>
+                        <img src={ meetupHeader.img } alt="Meetup Header"></img>
                     </div>
                     <div className="detail">
                         <h2> Hacktiv8 Meetup </h2>
@@ -25,15 +26,15 @@ class MeetupHeader extends React.Component {
                         <table cellPadding="5">
                             <tr>
                                 <td > Location </td>
-                                <td> Jakarta, Indonesia </td>
+                                <td>: { meetupHeader.location } </td>
                             </tr>
                             <tr>
                                 <td > Members </td>
-                                <td> 2000 </td>
+                                <td>: { meetupHeader.members } </td>
                             </tr>
                             <tr>
                                 <td > Organizers </td>
-                                <td> Aries Dimas Yudhistira </td>
+                                <td>: { meetupHeader.organizers } </td>
                             </tr>
                         </table>
 

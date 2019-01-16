@@ -7,6 +7,7 @@ class AboutMeetup extends React.Component {
             <section id="about-meetup"> 
                 <div className="container">
                     <h1>About Meetup</h1>
+                    
 
                     <p>
                         HACKTIV8 adalah pionir program pelatihan (coding bootcamp) 

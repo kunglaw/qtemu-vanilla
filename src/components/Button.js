@@ -1,22 +1,15 @@
 import React from "react" 
 import "./Button.css"
 
-class Button extends React.Component {
+const Button = (props) => {
 
-    constructor (props) {
-        super(props)
-        
-    }
+    const {...restProps} = props
 
-    render() {
-        return(
-            <button className={ this.props.className }>
-                { this.props.children }
-            </button>
-        ) 
-            
-        
-    }
+    return(
+        <button className={ props.className } {...restProps} >
+            { props.children }
+        </button>
+    ) 
 }
 
 export default Button
