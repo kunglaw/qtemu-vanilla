@@ -24,18 +24,20 @@ class MeetupHeader extends React.Component {
                         <div className="clearfix"></div>
 
                         <table cellPadding="5">
-                            <tr>
-                                <td > Location </td>
-                                <td>: { meetupHeader.location } </td>
-                            </tr>
-                            <tr>
-                                <td > Members </td>
-                                <td>: { meetupHeader.members } </td>
-                            </tr>
-                            <tr>
-                                <td > Organizers </td>
-                                <td>: { meetupHeader.organizers } </td>
-                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td > Location </td>
+                                    <td>: { meetupHeader.location } </td>
+                                </tr>
+                                <tr>
+                                    <td > Members </td>
+                                    <td>: { meetupHeader.members } </td>
+                                </tr>
+                                <tr>
+                                    <td > Organizers </td>
+                                    <td>: { meetupHeader.organizers } </td>
+                                </tr>
+                            </tbody>
                         </table>
 
                         <Button className="btn btn-primary btn-lg"> Join Us </Button>
