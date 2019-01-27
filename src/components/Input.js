@@ -1,14 +1,19 @@
 import React from 'react';
-import Styled from "styled-components"
+import TextField from "@material-ui/core/TextField"
 
 const Input = (props) => {
 
     const {...restProps} = props;
 
     return (
-        <input type={ props.type } name={ props.name } id={ props.id } className={ props.className } {...restProps} />
+        <TextField type={ props.type } name={ props.name } id={ props.id } className={ props.className } {...restProps} />
     );
 }
+
+/*
+
+    #2196f3
+*/
 
 
 export default Input;

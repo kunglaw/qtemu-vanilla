@@ -62,7 +62,7 @@ class Home extends Component {
  
   componentDidUpdate() {
     //console.log(" component did Update ")
-    alert(" ada data baru ")
+    //alert(" ada data baru ")
   }
 
   componentDidMount() {
@@ -118,7 +118,7 @@ class Home extends Component {
   }
 
   shouldComponentUpdate(nextProps, nextState) {
-
+    return true // dia harus return true atau false 
   }
 
   render() {

@@ -40,7 +40,7 @@ class MeetupHeader extends React.Component {
                             </tbody>
                         </table>
 
-                        <Button className="btn btn-primary btn-lg"> Join Us </Button>
+                        <Button color="primary" variant="contained" > Join Us </Button>
                     </div>
                     <div className="clearfix"></div>
                 </div>
