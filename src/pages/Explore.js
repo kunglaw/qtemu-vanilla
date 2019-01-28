@@ -11,8 +11,8 @@ class Explore extends Component {
             spacing:8
         }
         return (
-            <div >
-                <Navbar></Navbar>
+            <React.Fragment >
+               
                 <section style={{width:"90%",margin:"10px auto"}}>
 
                     <Text variant="h4" style={{ margin:"20px 0"}}> Explore </Text>
@@ -37,8 +37,8 @@ class Explore extends Component {
                     </Grid>
                     
                 </section>
-                <Footer></Footer>
-            </div>
+                
+            </React.Fragment>
         );
     }
 }

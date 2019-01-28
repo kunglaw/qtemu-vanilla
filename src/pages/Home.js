@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 
-import Navbar from "./../components/Navbar"
 import MeetupHeader from "./../components/MeetupHeader"
 import NextMeetup from "./../components/NextMeetup"
 import AboutMeetup from './../components/AboutMeetup';
 import Member from "./../components/Member"
 import PastMeetup from "./../components/PastMeetup"
-import Footer from "./../components/Footer"
+
 
 import axios from "axios"
 
@@ -74,6 +73,7 @@ class Home extends Component {
 
           const members = res.data.map( item => {
             return {
+              id: item.id,
               title: item.company.bs,
               name: item.name,
               avatar:""
@@ -126,15 +126,15 @@ class Home extends Component {
     const { meetupHeader,members,pastMeetup } = this.state
 
     return (
-      <div className="App">
-        <Navbar></Navbar>
+      <React.Fragment>
+       
         <MeetupHeader meetupHeader={ meetupHeader }></MeetupHeader>
         <NextMeetup></NextMeetup>
         <AboutMeetup></AboutMeetup>
         <Member members={ members }></Member>
         <PastMeetup pastMeetup={ pastMeetup }></PastMeetup>
-        <Footer></Footer>
-      </div>
+       
+      </React.Fragment>
     );
   }
 }

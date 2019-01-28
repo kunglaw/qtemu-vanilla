@@ -9,6 +9,7 @@ import { CardHeader, Button, Typography } from '@material-ui/core';
 class CreateMeetup extends Component {
 
     constructor() {
+        super()
         this.state = { 
             title:"",
             location:"",
@@ -20,7 +21,7 @@ class CreateMeetup extends Component {
     render() {
         return (
             <div>
-                <Navbar></Navbar>
+              
                     <form action="#" method="post"  >
                         <Card style={{ width:"90%", margin:"20px auto" }}>
                             <CardHeader title="Create Meetup"></CardHeader>
@@ -36,7 +37,7 @@ class CreateMeetup extends Component {
                             </CardContent>
                         </Card>
                     </form>
-                <Footer></Footer>
+                
             </div>
         );
     }

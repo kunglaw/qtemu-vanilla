@@ -6,16 +6,10 @@ import Input from "../components/Input"
 class Login extends Component {
     render() {
         return (
-            <div>
-                <Navbar></Navbar>
-                    <div>
-                        <div>
-                            <label> Email </label>
-                            <Input type="text" name="email" />
-                        </div>
-                    </div>
-                <Footer></Footer>
-            </div>
+            <React.Fragment>
+                <Input type="email" name="email" />
+                <Input type="password" name="password" />
+            </React.Fragment>
         );
     }
 }

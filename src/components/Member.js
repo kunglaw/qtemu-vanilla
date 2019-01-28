@@ -1,4 +1,6 @@
 import React from "react"
+import { Link } from "react-router-dom"
+import Text from "./Text"
 import "./Member.css"
 
 class Member extends React.Component {
@@ -9,11 +11,11 @@ class Member extends React.Component {
 
         const memberContents = members.map((content) => {
             return (
-                <div key={ content.name } className="content">
+                <div key={ content.id } className="content">
                     <img className="member-img" src="{}" alt="avatar"></img>
                     <div className="description">
                         <h3>{ content.title }</h3>
-                        <p>{ content.name }</p>
+                        <Link to={`/member/${content.id}`}><Text>{ content.name }</Text></Link>
                     </div>
                     <div className="clearfix"></div>
                 </div>
