@@ -3,6 +3,9 @@ import "./MeetupHeader.css"
 
 import Button from "./Button"
 
+import { connect } from "react-redux"
+import { changePageTitle, changeFooter } from "../common/actions/app"
+
 class MeetupHeader extends React.Component {
     constructor (props) {
         super(props)
@@ -13,6 +16,7 @@ class MeetupHeader extends React.Component {
 
     render() {
         const { meetupHeader } = this.state
+        const { changePageTitle, changeFooter } = this.props
         return (
             <section id="meetup-header" >
                 <div className="container">
@@ -41,6 +45,8 @@ class MeetupHeader extends React.Component {
                         </table>
 
                         <Button color="primary" variant="contained" > Join Us </Button>
+                        <Button color="success" variant="contained" onClick={ () => changePageTitle(" Yudhistira Asik ") } > Change Title </Button>
+                        <Button color="danger" variant="contained" onClick={ changeFooter } > Change Footer </Button>
                     </div>
                     <div className="clearfix"></div>
                 </div>
@@ -50,4 +56,9 @@ class MeetupHeader extends React.Component {
     }
 }
 
-export default MeetupHeader
+const mapDispatchToProps = {
+    changePageTitle,
+    changeFooter
+}
+
+export default connect(null,mapDispatchToProps)(MeetupHeader)

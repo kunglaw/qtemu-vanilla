@@ -23,11 +23,14 @@ class DetailMember extends Component {
         Axios.get(`https://jsonplaceholder.typicode.com/users/${this.props.match.params.memberId}`)
         .then(res => {
 
-            console.log( " res ====> ",res.data )
+            //console.log( " res ====> ",res.data )
 
             this.setState({
                 member: res.data
             })
+        })
+        .catch(err => {
+
         })
     }
 

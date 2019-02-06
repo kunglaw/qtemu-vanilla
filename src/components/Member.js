@@ -7,7 +7,7 @@ class Member extends React.Component {
 
     render() {
 
-        const { members } = this.props
+        const members  = this.props.members
 
         const memberContents = members.map((content) => {
             return (
@@ -38,5 +38,6 @@ class Member extends React.Component {
         )
     }
 }
+
 
 export default Member

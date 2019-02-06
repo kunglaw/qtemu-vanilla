@@ -5,6 +5,8 @@ import NextMeetup from "./../components/NextMeetup"
 import AboutMeetup from './../components/AboutMeetup';
 import Member from "./../components/Member"
 import PastMeetup from "./../components/PastMeetup"
+import { connect } from "react-redux"
+import { fetchMembers } from "../common/actions/members"
 
 
 import axios from "axios"
@@ -23,17 +25,17 @@ class Home extends Component {
         organizers:"Aries Dimas Yudhistira",
         img:"./assets/img/gintoki.png"
       } , 
-      members:[
-        {
-          title:"Organizer",
-          name:"Aries Dimas Yudhistira",
-          avatar:""
-        },{
-          title:"Asistant",
-          name:"Wika Silo",
-          avatar:""
-        }
-      ],
+      // members:[
+      //   {
+      //     title:"Organizer",
+      //     name:"Aries Dimas Yudhistira",
+      //     avatar:""
+      //   },{
+      //     title:"Asistant",
+      //     name:"Wika Silo",
+      //     avatar:""
+      //   }
+      // ],
       pastMeetup:[
         {
           title:"JakartaJS on Sailor Job Problem",
@@ -66,28 +68,29 @@ class Home extends Component {
 
   componentDidMount() {
     console.log(" componentDidMount ")
-    axios.get("https://jsonplaceholder.typicode.com/users")
-         .then((res) => {
+    this.props.fetchMembers()
+    // axios.get("https://jsonplaceholder.typicode.com/users")
+    //      .then((res) => {
 
-          console.log( " res ====> ",res.data )
+    //       console.log( " res ====> ",res.data )
 
-          const members = res.data.map( item => {
-            return {
-              id: item.id,
-              title: item.company.bs,
-              name: item.name,
-              avatar:""
-            }
-          })
+    //       const members = res.data.map( item => {
+    //         return {
+    //           id: item.id,
+    //           title: item.company.bs,
+    //           name: item.name,
+    //           avatar:""
+    //         }
+    //       })
 
-           //console.log( data )
-           this.setState({
-              members 
-           })
-         })
-         .catch(err => {
-           console.log(err)
-         })
+    //        //console.log( data )
+    //        this.setState({
+    //           members 
+    //        })
+    //      })
+    //      .catch(err => {
+    //        console.log(err)
+    //      })
 
     axios.get("https://swapi.co/api/films/")
          .then(res => {
@@ -131,7 +134,7 @@ class Home extends Component {
         <MeetupHeader meetupHeader={ meetupHeader }></MeetupHeader>
         <NextMeetup></NextMeetup>
         <AboutMeetup></AboutMeetup>
-        <Member members={ members }></Member>
+        <Member members={ this.props.members.members }></Member>
         <PastMeetup pastMeetup={ pastMeetup }></PastMeetup>
        
       </React.Fragment>
@@ -139,4 +142,14 @@ class Home extends Component {
   }
 }
 
-export default Home;
+const mapStateToProps = (state) => {
+  return {
+    members:state.members
+  }
+}
+
+const mapDispatchToProps = {
+  fetchMembers:fetchMembers
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
