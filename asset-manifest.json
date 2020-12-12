@@ -1,0 +1,13 @@
+{
+  "main.css": "/qtemu-vanilla/static/css/main.c87c166a.chunk.css",
+  "main.js": "/qtemu-vanilla/static/js/main.55fcfb11.chunk.js",
+  "main.js.map": "/qtemu-vanilla/static/js/main.55fcfb11.chunk.js.map",
+  "static/js/1.b5812664.chunk.js": "/qtemu-vanilla/static/js/1.b5812664.chunk.js",
+  "static/js/1.b5812664.chunk.js.map": "/qtemu-vanilla/static/js/1.b5812664.chunk.js.map",
+  "runtime~main.js": "/qtemu-vanilla/static/js/runtime~main.d05d7259.js",
+  "runtime~main.js.map": "/qtemu-vanilla/static/js/runtime~main.d05d7259.js.map",
+  "static/css/main.c87c166a.chunk.css.map": "/qtemu-vanilla/static/css/main.c87c166a.chunk.css.map",
+  "index.html": "/qtemu-vanilla/index.html",
+  "precache-manifest.ee987230cbaedbb1cd4213a1ce11b7cf.js": "/qtemu-vanilla/precache-manifest.ee987230cbaedbb1cd4213a1ce11b7cf.js",
+  "service-worker.js": "/qtemu-vanilla/service-worker.js"
+}
